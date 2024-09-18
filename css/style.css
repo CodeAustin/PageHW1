@@ -99,7 +99,7 @@ article {
     bottom: 0;
     background: linear-gradient(to bottom, #6F4E37, #3f2f1a);
     animation: mymove 6s ease-in-out;
-    animation-fill-mode: fowards;
+    animation-fill-mode: forwards;
 }
 
 @keyframes mymove {
@@ -179,7 +179,6 @@ https://dcode.domenade.com/tutorials/how-to-style-html-tables-with-css
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
     border: 10px white;
     border-radius: 5%;
@@ -188,7 +187,6 @@ https://dcode.domenade.com/tutorials/how-to-style-html-tables-with-css
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     background-color: white;
-    border: 1px solid white;
     color: black;
   }
   
