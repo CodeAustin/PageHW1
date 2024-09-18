@@ -1,0 +1,210 @@
+/* Colors found via https://www.color-hex.com/color-palette/30023 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* */
+body {
+    background: linear-gradient(90deg, #ece0d1, #dbc1ac);
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+}
+
+/* */
+header {
+    width: 100%;
+    display: inline-block;
+    border: 10px solid #634832;
+    background-color: #634832;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+/* Code to help with captioning images*/
+figure {
+    padding: 4px;
+    margin: auto;
+  }
+  
+  figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+  }
+
+/* Text boxes to allow for better contrasting text*/
+article {
+    margin: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+/* Ensures that there is space for the animated cup  */
+.image-row{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+/* Code portions to help with centering and inspired by: https://codepen.io/codingbear/pen/oqmWmy */
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Cup and handle models were inspired by by: https://www.youtube.com/watch?v=_jOqYe0eFqY*/
+.cup {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    background: #eeeeee;
+    border: 20px solid #eeeeee;
+    border-bottom-left-radius: 45%;
+    border-bottom-right-radius: 45%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.handle {
+    position: absolute; /* This breaks if it isnt absolute, not sure why */
+    right: -67px; 
+    top: 40px;
+    width: 100px;
+    height: 100px;
+    border: 25px solid #eeeeee;
+    border-left: 25px solid transparent;
+    border-radius: 50%;
+}
+
+.coffee {
+    position: absolute;
+    width: 100%;
+    height: 90%; /* MUST HAVE THE SAME HEIGHT AS MYMOVE KEYFRAME!!!!!!! */
+    bottom: 0;
+    background: linear-gradient(to bottom, #6F4E37, #3f2f1a);
+    animation: mymove 6s ease-in-out;
+    animation-fill-mode: fowards;
+}
+
+@keyframes mymove {
+    from { height: 0%;}
+    to {height: 90%;  }
+}
+
+
+/* Table styling inspired by dcode: 
+https://www.youtube.com/watch?v=biI9OFH6Nmg&t=16s
+https://dcode.domenade.com/tutorials/how-to-style-html-tables-with-css
+ */
+.content-table {
+    border-collapse: collapse;
+    margin: 50px auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #634832;
+    color: #eeeeee;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 20px 30px;
+}
+
+.content-table tbody tr {
+    align-self: start;
+}
+
+.content-table tbody tr.odd-row {
+    font-weight: bold;
+    background-color: #eed8c2	;
+}
+
+.content-table tbody tr.even-row {
+    font-weight: bold;
+    background-color: #e3c7ab;
+}
+
+/* Card styling inspired by: https://www.w3schools.com/howto/howto_css_cards.asp */
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    align-items: center;
+    background-color: transparent;
+    padding: 10px;
+    width: 280px;
+    height: 280px;
+    perspective: 1000px; 
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1.2s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border: 10px white;
+    border-radius: 5%;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    padding: 20px;
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+  }
+
+/***
+Credits and Refrences:
+Coffee colors for page: https://www.color-hex.com/color-palette/30023
+Inspriation for the cup filling and refrence for image centering: https://codepen.io/codingbear/pen/oqmWmy
+Basis for the cup and handle models: https://www.youtube.com/watch?v=_jOqYe0eFqY
+Inspiration for table styling: https://www.youtube.com/watch?v=biI9OFH6Nmg&t=16s
+Code for Card taken from: https://www.w3schools.com/howto/howto_css_cards.asp
+***/

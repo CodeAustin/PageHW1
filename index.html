@@ -1,0 +1,280 @@
+<!--
+File: index.html
+Assignment1 : Creating Your First Web Page
+Name: Austin NGuyen, austin_nguyen@student.uml.edu
+Date: 9/17/2024
+Description: This is the main page of the website that will introduce the user to the different 
+methods of brewing coffee. This page will hopefully inform viewers about the growing coffee hobby 
+and give links to those further interested. Personally, this assignment served as a basis for a 
+combination of learning HTML and CSS without the need for JavaScript. 
+
+Let it be known that are large portion of the code done in this assignment was inspired by the
+various tutorials found at https://www.w3schools.com and a handful of youtube tutorial for additional
+features such as the colorful table and animated coffee cup. A full list of references can be found at 
+the bottom of the page.
+-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <meta charset="utf-8">
+    <title>Coffee.</title>
+    <link rel="stylesheet" href="css/style.css">
+
+	<!-- Favicon Image Taken by Austin Nguyen -->
+	<link rel="icon" type="image/x-icon" href="/images/latte.png">
+	</head>
+  	<body>
+		<header>
+				<h1>The Coffee Brewing Comparison!</h1>
+				
+		</header>
+		<br> 		<br>
+		
+		<h2> Introduction to Coffee </h2>
+		<article>
+			<!-- First introduction paragraph about coffee: its really just filler text-->
+			<p> For many, coffee is an essential good that
+				has very few substitutes for an early morning boost. 
+				Despite widespread usage a  large portion of coffee drinkers rely on just two methods 
+				of obtaining their fix coffee shops or drip machines.
+				 </p>
+			<p> Recently there has been a trend of at-home coffee brewing without using drip machines,
+				 where coffee enthusiasts experimented using pour overs, coffee percolators, and modding
+				  espresso machines. This website will give a general overview to several brewing methods of  
+				  coffee for anyone interested in brewing better coffee
+				   at home.
+				</p>
+		</article>
+		<div class="image-row" >
+			<!-- Images taken by Austin, the cat's name is Momo -->
+			<img src="images/atomic-coffee.png" alt="atomic" style="width:450px; height: 300px; position: absolute; left: 50px;">
+			<img src="images/momo.png" alt="momo" style="width:450px; height: 300px; position: absolute; right:50px;">
+
+		</div>
+		<!-- This was the only way to get enough verticle space-->
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+		<header>
+			<h4> Page made with the help of Feline Supervisor: Momo the Tuxedo Cat </h2>
+		</header>
+		<br><br>
+		
+		<h2> Brewing </h2>
+		<article>
+			<!-- Filler text, -->
+			<h3 style="color: #634832 "> Set-up is everything!</h3>
+			<p> There are several factors to consider when choosing their first coffee maker,
+				 with the most important being how much time someone would like to invest in 
+				their daily cup of joe.
+				James Hoffman’s <a href="https://www.youtube.com/watch?v=O9YnLFrM7Fs&list=PLxz0FjZMVOl0sUXHoxf7sR37D-qtwAGne">A Beginner's Guide To Coffee</a> 
+				 videos are an amazing source 
+				of information regarding everything from techniques to where to get the fresh 
+				and wonderful coffee beans.  </p>
+			</article>
+			<h3> Four<i> Simple-ish</i> Methods!</h3>
+			<article>
+				<!-- Filler text, will be taken out on final upload-->
+				<h4 style="color: #634832 "> Pour Over </h4>
+				<p>
+					Pour-overs coffee is perhaps the most similar to the usual drip coffee
+					 machines people are familiar with in office spaces and diners. However, 
+					 there is much more control involved with pour over coffees allowing for the development 
+					 of recipes and technique. Such techniques often create a balanced and “clean” cup of coffee that 
+					 is pleasing to almost everyone depending on the beans and recipe.	
+					
+				</p>
+				</article>
+
+				<article>
+				<h4 style="color: #634832 "> Aeropress </h4>
+				<p>
+					The Aeropress is another manual brewer, featuring a cylindrical chamber 
+					where coffee grounds can be immersed in hot water for a short period of time and pressed out 
+					resulting in a cup that is more rich and full-bodied than those possible by pour-over coffees. 
+					</p>
+				</article>
+
+				<article>
+				<h4 style="color: #634832 "> Moka Pot </h4>
+				<p>
+					The Moka Pot is a stovetop coffee maker that brews coffee by passing boiling water pressurized by steam 
+					through ground coffee. It is a staple in Italian households and is known for its strong and rich coffee. 
+					</p>
+				</article>
+
+				<article>
+
+				<h4> Espresso Machine </h4>
+				<p style="color: #634832 ">
+					Espresso machines are the most expensive and complex of the four methods, 
+					but they are also the most versatile. Espresso machines can make a variety of drinks 
+					including lattes, cappuccinos, and macchiatos. 
+					</p>
+				</article>
+				
+			
+			<h3> Discover the different ways to brew coffee: </h3>
+
+			<!-- Brewing Card row -->
+			<div class="row">
+				<!-- Chemex Brewing Card-->
+				<div class="flip-card">
+					<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<!-- Image Source: https://www.chemexcoffeemaker.com/eight-cup-classic-series-coffeemaker.html-->
+						<img src="images/chemex.png" alt="8 Cup Chemex" style="width: 65%; padding: 20px;">
+					</div>
+					<div class="flip-card-back">
+						<br><h4>The Chemex</h4><br>
+						<p>A glass pour-over style coffee maker that uses a thick paper filter to brew crisp, clean coffee.</p>
+					</div>
+					</div>
+				</div>
+
+				<!-- Hario V60 Brewing Card-->
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<!-- Image Source: -->
+							<img style="width: 100%;" src="images/v60-clear.png" alt="Hario V60 - White Plastic">
+						</div>
+						<div class="flip-card-back">
+							<h4>Hario V60</h4><br>
+							<p> Pour-over coffee maker made in Japan designed to rest on cup of coffee, allowing for easier clean up.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Aeropress Brewing Card-->
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+						<!-- Image Source: -->
+						<img src="images/aeropress.png" alt="8 Cup Chemex" style="width: 50%; padding: 20px;">
+					</div>
+					<div class="flip-card-back">
+						<h4>Aeropress</h4><br>
+						<p> A manual brewer that uses a plunger to push water through coffee beans in order to infuse pressure into the coffee .</p>
+					</div>
+					</div>
+				</div>
+
+				<!-- Moka Pot Brewing Card-->
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<!-- Image Source: -->
+							<img style="width: 90%; padding: 20px;" src="images/mokapot.png" alt="Moka Pot">
+						</div>
+						<div class="flip-card-back">
+							<h4>Moka Express </h4><br>
+							<p> An italian stovetop coffee maker intended to replicate the strength of espresso at home.</p>
+						</div>
+					</div>
+				</div>
+				<!-- Flip Card for Bambino PLus -->
+				<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<!-- Image Source: -->
+							<img style="width: 65%; padding: 15px" src="images/bambino.png" alt="Espresso Machine">
+						</div>
+						<div class="flip-card-back">
+							<h4>The Breville Bambino Plus</h4><br>
+							<p> A domestic grade esspress machine, using high-pressure and heat to create concentrated espresso shots. Model shown has an automatic steam milk function</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		<!-- Grind size comparison -->
+		<h2> Grind Size Comparison</h2>
+		<article>
+			<p> 
+			Just as every coffee brewer is different, the size of the grind these machines 
+			take are different for each method of brewing. The grind size is important as it
+			determines the rate at which water can passes through the coffee grounds, ultimately effecting 
+			the taste and flavor of the coffee. While some people own a manaul or electric offeegrinder, 
+			many people rely on either pre-ground coffee or grind their coffee at the store if possible.
+			</p>
+		</article>
+		<!-- Table of Grind Sizes -->
+		<table class="content-table">
+			<thead>
+			  <tr> 
+				<!--- Header table -->
+				<th> Model </th>
+				<th> Grind Size </th>
+				<th> Price </th>
+				<th> Material </th>
+				<th> Link </th>
+			  </tr>
+			</thead>
+			<tbody>
+			  <tr class="odd-row">
+				<td> Chemex </td>
+				<td> Medium-Fine </td>
+				<td> $30-50 </td>
+				<td> Glass</td>
+				<td> <a href="https://www.chemexcoffeemaker.com/"> Chemex Website</a> </td>
+			  </tr>
+			  <tr class="even-row">
+				<td>Hario V60</td>
+				<td>Medium</td>
+				<td>$10-20</td>
+				<td>Plastic, Glass or Ceramic</td>
+				<td> <a href="https://www.hario-usa.com/"> Hario USA Website</a> </td>
+			  </tr>
+			  <tr class="odd-row">
+				<td>Aeropress</td>
+				<td>Medium-Fine</td>
+				<td>$30-40</td>
+				<td>Plastic</td>
+				<td> <a href="https://aeropress.com/"> Aeropress Website</a> </td>
+			  </tr>
+			  <tr class="even-row">
+				<td>Mokapot</td>
+				<td>Fine</td>
+				<td>$30-40</td>
+				<td>Aluminium</td>
+				<td> <a href="https://www.bialetti.com/it_en/moka-express.html">  Moka Express Website</a> </td>
+			  </tr>
+			  <tr class="odd-row">
+				<td>Breville Bambino</td>
+				<td>Very fine</td>
+				<td>$200+</td>
+				<td>Stainless Steel</td>
+				<td> <a href="https://aeropress.com/"> Berville Website</a> </td>
+			  </tr>
+			</tbody>
+		  </table>
+
+		  <div class="container">
+			<div class="cup">
+			  <div class="coffee"></div>
+			</div>
+			<div class="handle"></div>
+		  </div>
+	</body>
+</html>
+
+<!-- 
+List of Credits/References for Images and Code
+--------Code Refrences:--------
+Hyperlinks: https://www.w3schools.com/html/html_links.asp
+Flip Card Code: https://www.w3schools.com/howto/howto_css_flip_card.asp
+Table Code: https://www.w3schools.com/html/html_tables.asp
+Caption for Images: https://www.w3schools.com/tags/tag_figcaption.asp
+
+--------CSS Refrences:--------
+CSS Styling: https://www.w3schools.com/css/default.asp
+Hex Code for Color: https://www.color-hex.com/color-palette/30023
+
+
+--------Image Refrences:--------
+Chemex 8 Cup Card Image: https://www.chemexcoffeemaker.com/eight-cup-classic-series-coffeemaker.html
+Hario V60 Card Image: https://www.hario-usa.com/
+Aeropress Card Image: https://aeropress.com/
+Moka Pot Card Image: https://www.bialetti.com/it_en/moka-express.html
+Breville Bambino Card Image: https://www.breville.com/us/en/products/espresso/bes450.html
+-->
